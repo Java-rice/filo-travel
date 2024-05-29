@@ -1,0 +1,146 @@
+nav{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    padding: 4px 0;
+    top: 20px;
+    left: 0;
+    justify-content: space-between;
+    z-index: 10;
+    transition: 0.3s ease;
+}
+
+.container.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10%;
+    padding-left: 10%;
+    top: 0px;
+    transition: 0.3s ease;
+}
+
+.logo{
+    width: 160px;
+    cursor: pointer;
+}
+
+.logo:hover{
+    transform: scale(1.10);
+    transition: .5s ease-in-out;
+}
+
+ul{
+    flex: 1;
+    list-style: none;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: 'Arimo',sans-serif;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white; 
+    transition: color 0.3s ease;
+}
+
+.active-link {
+    color: #00A0B1;
+    text-decoration: underline;
+}
+
+.mobile i{
+    color: white;
+    width: 25px;
+    align-items: center;
+}
+
+.mobile{
+    display: none;
+    width: 40px;
+}
+
+.mobile:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: 0.3s ease-in-out;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: white;
+    background-color:  rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.container.scrolled #navbar li a:hover,
+.container.scrolled #navbar li a.active {
+    background-color: #00A0B1;
+    transition: 0.3s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:769px){
+    #navbar{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: fixed;
+        top: 90px;
+        right: -300px;
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 40px 60px rgba(0 0 0 0.1);
+        padding: 40px 0 40px 40px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile i{
+        font-size: 24px;
+        cursor: pointer;
+    }
+    #navbar li a:hover,
+    #navbar li a.active {
+        background-color: #00A0B1;
+    }
+
+
+}

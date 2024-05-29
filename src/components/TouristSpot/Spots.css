@@ -1,0 +1,104 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+.spotcontainer {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    transition: 0.3s ease-in-out;
+}
+
+#spottext{
+    text-align: center;
+}
+
+h3{
+    color: #00A0B1;
+}
+
+.spot-items, .spot-items li a {
+    color: #363636;
+    text-align: left;
+    transition: color 0.1s ease, border-bottom 0.3s ease;
+    list-style: none;
+}
+
+.spotnavcontainer {
+    width: 25%;
+    text-align: left;
+    background-color: #FFFFFF;
+    padding: 2% 2%;
+    line-height: 2.2;
+    position: sticky;
+    height: 450px;
+}
+
+.spotcontent {
+    width: 70%;
+    opacity: 1;
+}
+
+.spot-items a:hover,
+.spot-items a.active {
+    color: #00A0B1;
+    border-bottom: 3px solid #00A0B1;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.spot-items a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+  
+.spot-items a:hover::before,
+.spot-items a.active::before {
+    visibility: visible;
+    width: 100%;
+}
+  
+.fade-out {
+    opacity: 0;
+}
+  
+.fade-in {
+    opacity: 1;
+}
+
+.italicNote{
+    text-align: left;
+    padding-bottom: 10%;
+}
+  
+
+@media screen and (max-width:769px){
+    .spotcontainer {
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 0.3s ease-in-out;
+    }
+    .spotnavcontainer {
+        width: 100%;
+        bottom: 100px;
+        padding: 2% 2%;
+        line-height: 1.6;
+        position: inherit;
+        text-align: center;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .spotcontent {
+        width: 100%;
+    }
+}

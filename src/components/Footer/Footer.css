@@ -1,0 +1,146 @@
+  .footer {
+    height: 600px;
+  }
+
+  .top-footer-container {
+    position: relative;
+    width: 100%;
+    height: 60%;
+  }
+
+  .footer-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .top-footer-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .top-footer-content h1 {
+    color: #FFF;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px;
+  }
+
+  .footer-email-input {
+    width: 75%;
+    height: 80%;
+    flex-shrink: 0;
+    border-radius: 8px 0 0 8px;
+    background: #FFF;
+    color: #363636;
+    font-family: 'Lato';
+    font-size: 1rem;
+    padding: 30px;
+    border: none;
+    cursor:text;
+  }
+
+  .subscribe{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-subscribe-button{
+    width: 25%;
+    height: 80%;
+    font-weight: bold;
+    border-radius: 0 8px 8px 0;
+    border: 0;
+    margin: 0;
+    color: #FFF;
+    font-size: 1rem;
+    font-family: 'Montserrat',sans-serif;
+    background-color: #00A0B1;
+  }
+
+  .footer-subscribe-button:hover{
+    font-size: 1.2rem;
+    width:26%;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .bottom-footer-container {
+    max-width: 100%;
+    padding: 50px;
+    background-color: #00A0B1;
+  }
+  
+  .bottom-footer-content {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+  }
+
+  .bottom-footer-content h1 {
+    font-family: Montserrat;
+    font-size: 2rem;
+    margin: 20px;
+  }
+  
+  .bottom-footer-content p {
+    width: 30%;
+    font-family: Lato;
+    font-size: 1rem;
+    margin: 20px;
+  }
+
+  .social-icons {
+    margin: 20px;
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    margin-right: 10px
+  }
+
+  .social-icon:hover {
+    width: 35px;
+    height: 35px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width:1560px){
+    .bottom-footer-content {
+      justify-content: center;
+      align-items: center;
+      animation: 0.3s ease-in;
+    }
+    .bottom-footer-content p {
+      width: 90%;
+      text-align: center;
+      animation: 0.3s ease-in;
+    }
+  }
+
+  @media screen and (max-width:769px){
+    .bottom-footer-content {
+      justify-content: center;
+      align-items: center;
+      animation: 0.3s ease-in;
+    }
+    .bottom-footer-content p {
+      width: 90%;
+      text-align: center;
+      animation: 0.3s ease-in;
+    }
+  }

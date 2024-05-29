@@ -1,0 +1,46 @@
+.content-change{
+    color: #363636;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.content-change h2{
+    color: #00A0B1;
+}
+
+.content-change .youtube-link{
+    text-decoration: underline;
+}
+
+.content-change h1{
+    font-size: 1.8rem;
+}
+
+.content-trip {
+    color: #00A0B1;
+    border: 2px dashed;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.content-trip p {
+    color: #363636;
+    margin-left: 24px;
+    margin-right: 22px;
+}
+
+.content-trip h2 {
+    margin-left: 24px;
+}
+
+@media screen and (max-width:769px){
+    
+}
